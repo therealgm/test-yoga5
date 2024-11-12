@@ -13,6 +13,6 @@ struct Pose {
     let imageName: String  // Name of the image asset
 }
 
-struct demo{
+struct demo1{
     
 }
