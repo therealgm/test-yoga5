@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vGq-S1-v5Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vGq-S1-v5Q">
     <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -329,37 +329,6 @@
             </objects>
             <point key="canvasLocation" x="32.835820895522389" y="748.97025171624705"/>
         </scene>
-        <!--Routine-->
-        <scene sceneID="RAk-33-lJH">
-            <objects>
-                <viewController id="RV0-Rg-AyK" customClass="PoseDetectionViewController" customModule="test_yoga5" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hWy-KB-CQe">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="VlY-ZC-BeN"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Routine" id="BQo-8g-0ss">
-                        <imageReference key="image" image="calendar" catalog="system" renderingMode="hierarchical">
-                            <hierarchicalColors>
-                                <color systemColor="labelColor"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
-                        <color key="badgeColor" red="0.75686274509999996" green="0.40000000000000002" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <imageReference key="selectedImage" image="calendar" catalog="system" renderingMode="hierarchical-single">
-                            <hierarchicalColors>
-                                <color red="0.75686274509999996" green="0.40000000000000002" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RNi-7e-3wY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="773" y="749"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ka7-Vi-BeJ">
             <objects>
@@ -376,7 +345,6 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="gs2-zE-R0w"/>
                         <segue destination="ZRQ-q7-3zh" kind="relationship" relationship="viewControllers" id="Gtd-aO-HyM"/>
-                        <segue destination="RV0-Rg-AyK" kind="relationship" relationship="viewControllers" id="agh-ud-C5z"/>
                         <segue destination="bZP-af-N0d" kind="relationship" relationship="viewControllers" id="TqQ-K2-vcN"/>
                     </connections>
                 </tabBarController>
@@ -384,7 +352,7 @@
             </objects>
             <point key="canvasLocation" x="32.824427480916029" y="3.5211267605633805"/>
         </scene>
-        <!--Item-->
+        <!--Routine-->
         <scene sceneID="W15-d0-j6F">
             <objects>
                 <viewController id="bZP-af-N0d" customClass="ViewController" customModule="test_yoga5" customModuleProvider="target" sceneMemberID="viewController">
@@ -597,7 +565,23 @@
                             <constraint firstItem="36c-Vm-TQe" firstAttribute="leading" secondItem="WYP-qM-7mV" secondAttribute="leading" constant="20" id="mPa-rw-rKJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="calendar.circle" catalog="system" selectedImage="calendar.circle.fill" id="bZD-SG-fvb"/>
+                    <tabBarItem key="tabBarItem" title="Routine" id="bZD-SG-fvb">
+                        <imageReference key="image" image="calendar" catalog="system" renderingMode="hierarchical">
+                            <hierarchicalColors>
+                                <color systemColor="labelColor"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                        <color key="badgeColor" red="0.75686274509803919" green="0.40000000000000002" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <imageReference key="selectedImage" image="calendar" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color red="0.75686274509999996" green="0.40000000000000002" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </tabBarItem>
                     <connections>
                         <outlet property="collectionView" destination="R9V-qn-HxN" id="V1A-hg-5zq"/>
                         <outlet property="completedLabel" destination="Zbw-6F-V4P" id="GzJ-8V-Ylw"/>
@@ -612,13 +596,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClT-z9-HiI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1391.044776119403" y="748.97025171624705"/>
+            <point key="canvasLocation" x="836" y="748"/>
         </scene>
     </scenes>
     <resources>
         <image name="calendar" catalog="system" width="128" height="107"/>
-        <image name="calendar.circle" catalog="system" width="128" height="123"/>
-        <image name="calendar.circle.fill" catalog="system" width="128" height="123"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
